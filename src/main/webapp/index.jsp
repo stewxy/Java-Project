@@ -21,6 +21,12 @@
 	
 %>
  Hello World
+<form action="loginprocess.jsp">
+UserName:<input type="text" name="username"/><br/><br/>
+Password:<input type="password" name="password"/><br/><br/>
+<input type="submit" value="login"/>
+</form>
+ 
 <a href="login.jsp">login</a>
 <a href="logout.jsp">logout</a>
 <a href="profile.jsp">profile</a>
