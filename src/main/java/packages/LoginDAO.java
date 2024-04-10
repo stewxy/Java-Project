@@ -8,7 +8,7 @@ public class LoginDAO {
 			
 			Connection con = DbManager.getConnection();
 			
-			PreparedStatement ps=con.prepareStatement("select * from user432 where username=? and password=?");
+			PreparedStatement ps=con.prepareStatement("select * from users where username=? and password=?");
 			ps.setString(1, login.getUsername());
 			ps.setString(2, login.getPassword());
 			
