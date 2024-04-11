@@ -1,12 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<%@ page import="java.sql.Connection" %>
-<%@ page import="packages.DbManager" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ page import="java.sql.Connection, packages.DbManager" %>
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="ISO-8859-1">
-		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<title>Main Page</title>
 	</head>
 	<body>	
@@ -21,18 +19,15 @@
 			}
 			
 		%>
-		<h1>Main Page</h1>
+		<h1>Login</h1>
 		
 		<br/>
 		<br/>
 		<form action="loginprocess.jsp">
-			UserName:<input type="text" name="username"/><br/><br/>
-			Password:<input type="password" name="password"/><br/><br/>
-			<input type="submit" value="login"/>
+			Username: <input type="text" name="username"/><br/><br/>
+			Password: <input type="password" name="password"/><br/><br/>
+			<input type="submit" value="login"/><br/><br/>
 		</form>
 		 
-		<a href="login.jsp">login</a>
-		<a href="logout.jsp">logout</a>
-		<a href="profile.jsp">profile</a>
 	</body>
 </html>
