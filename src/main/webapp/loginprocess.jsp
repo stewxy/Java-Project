@@ -1,4 +1,3 @@
-<%@ include file="index.jsp" %>  
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ page import="java.sql.Connection" %>
@@ -15,7 +14,7 @@
 		<%
 			boolean status=LoginDAO.validate(obj);
 			if(status){
-				out.println("You r successfully logged in");
+				out.println("You are successfully logged in");
 				session.setAttribute("session","TRUE");
 			}
 			else
