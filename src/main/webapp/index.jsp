@@ -24,10 +24,15 @@
 		<br/>
 		<br/>
 		<form action="loginprocess.jsp">
-			Username: <input type="text" name="username"/><br/><br/>
+			UserName: <input type="text" name="username"/><br/><br/>
 			Password: <input type="password" name="password"/><br/><br/>
-			<input type="submit" value="login"/><br/><br/>
+			<input type="submit" value="login"/>
 		</form>
+		<a href="register.jsp">
+				<button>register</button>
+		</a>
+		
+		
 		 
 	</body>
 </html>

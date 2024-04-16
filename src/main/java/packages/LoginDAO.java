@@ -18,5 +18,14 @@ public class LoginDAO {
 		}catch(Exception e){}
 		return status;
 	}
+//	public static void create(String user, String pass) {
+//		Login register = new Login();
+//		
+//		Connection con = DbManager.getConnection();	
+//		PreparedStatement ps=con.prepareStatement("insert into users(username, password) values (user, pass)");
+//		ps.setString(1, register.setUsername(user));
+//		ps.setString(2, register.setPassword(pass));
+//	}
+	
 }
 
