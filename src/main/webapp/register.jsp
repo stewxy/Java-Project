@@ -5,12 +5,12 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Register Form</title>
 </head>
 <body>
 	<form action="registerprocess.jsp">
-		UserName: <input type="text" name="username"/><br/><br/>
-		Password: <input type="password" name="password"/><br/><br/>
+		<input type="text" name="username" value="Name..." onclick="this.value=''"/><br/>
+		<input type="password" name="password"  value="Password..." onclick="this.value=''"/><br/>
 		<input type="submit" value="register"/>
 	</form>
 </body>
