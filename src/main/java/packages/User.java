@@ -1,7 +1,7 @@
 package packages;
 
 public class User {
-	private String username,password;
+	private String username, password;
 
 	public String getUsername() {
 		return username;

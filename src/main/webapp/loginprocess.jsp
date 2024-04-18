@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ page import="java.sql.Connection, packages.DbManager, packages.LoginDAO" %>
-<jsp:useBean id="obj" class="packages.Login"/>
+<jsp:useBean id="obj" class="packages.User"/>
 <jsp:setProperty property="*" name="obj"/>
 
 <!DOCTYPE html>
