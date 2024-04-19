@@ -5,28 +5,20 @@
 	<head>
 		<meta charset="ISO-8859-1">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
-		<title>Main Page</title>
+		<title>Login Page</title>
 	</head>
 	<body>	
-		<%
-			//DbManager db = new DbManager();
-			Connection conn = DbManager.getConnection();
-			if(conn == null){
-				out.print("* Connection Failed *");
-			}
-			else{
-				out.print("* Connection Succeeded *");
-			}
-			
-		%>
+		<h1>Login</h1>
 		
 		<br/>
 		<br/>
-		<a href="login.jsp">
-				<button>LOGIN</button>
-		</a>
+		<form action="loginprocess.jsp">
+			UserName: <input type="text" name="username"/><br/><br/>
+			Password: <input type="password" name="password"/><br/><br/>
+			<input type="submit" value="login"/>
+		</form>
 		<a href="register.jsp">
-				<button>REGISTER</button>
+				<button>register</button>
 		</a>
 		
 		

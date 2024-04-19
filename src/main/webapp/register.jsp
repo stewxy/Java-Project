@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Register Form</title>
+<title>Register Page</title>
 </head>
 <body>
 	<form action="registerprocess.jsp">
