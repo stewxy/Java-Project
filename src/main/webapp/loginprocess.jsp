@@ -13,11 +13,7 @@
 			boolean status=LoginDAO.validate(obj);
 			if(status){
 				
-				
-				%>
-				<jsp:include page="profile.jsp"></jsp:include> 
-				<% 
-				out.println("You are successfully logged in");
+				response.sendRedirect("profile.jsp");
 				
 				session.setAttribute("session","TRUE");
 				
