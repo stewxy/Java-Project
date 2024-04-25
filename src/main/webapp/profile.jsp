@@ -4,12 +4,14 @@
 <html>
 	<head>
 		<meta charset="ISO-8859-1">
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/profile.css">
 		<title>Profile</title>
 	</head>
 	
 	<body>
-		Welcome
+		<h1 id="heading">
+			Welcome
+		</h1>
 		<%
 			String name=(String)session.getAttribute("user");
 			out.print(name);
