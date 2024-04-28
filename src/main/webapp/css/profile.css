@@ -24,12 +24,11 @@ body{
 	animation: fadeInAnimation ease 2s;
 	animation-iteration-count: 1;
     animation-fill-mode: forwards;
-	font-size: 100px;
-	background: #B8E1FC;
-	background: radial-gradient(circle farthest-corner at center center, #B8E1FC 0%, #231421 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
+	font-size: 200px;
+	background: radial-gradient(circle, #d0d0d0 0%, #000000 100%);
+	background-clip: text;
+	color: transparent;
+}			
 
 #userName{
 	opacity: 0;

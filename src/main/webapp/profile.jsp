@@ -16,6 +16,7 @@
 			<%
 				String name=(String)session.getAttribute("user");
 				out.print(name);
+				//String output = name.substring(0, 1).toUpperCase() + name.substring(1);
 			%><br/>
 		</div>
 	</body>
