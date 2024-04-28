@@ -12,9 +12,11 @@
 		<h1 id="heading">
 			Welcome
 		</h1>
-		<%
-			String name=(String)session.getAttribute("user");
-			out.print(name);
-		%><br/>
+		<div id="userName">
+			<%
+				String name=(String)session.getAttribute("user");
+				out.print(name);
+			%><br/>
+		</div>
 	</body>
 </html>

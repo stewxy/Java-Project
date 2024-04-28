@@ -1,6 +1,15 @@
 @charset "ISO-8859-1";
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
+@keyframes fadeInAnimation{
+	0% {
+	opacity: 0;
+   }
+	100% {
+   	opacity: 1;
+   }
+}
+
 html{
 	font-family: "Plus Jakarta Sans", sans-serif;
 }
@@ -8,11 +17,23 @@ html{
 body{
 	background-color: black;
 	color: white;
+	text-align:center;
 }
 
 #heading{
+	animation: fadeInAnimation ease 2s;
+	animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+	font-size: 100px;
 	background: #B8E1FC;
 	background: radial-gradient(circle farthest-corner at center center, #B8E1FC 0%, #231421 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
+#userName{
+	opacity: 0;
+	animation: fadeInAnimation ease 2s 1s;
+	animation-fill-mode: forwards;
+}
+
