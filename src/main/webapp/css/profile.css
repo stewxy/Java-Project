@@ -31,6 +31,7 @@ body{
 }			
 
 #userName{
+	font-size: 50px;
 	opacity: 0;
 	animation: fadeInAnimation ease 2s 1s;
 	animation-fill-mode: forwards;
