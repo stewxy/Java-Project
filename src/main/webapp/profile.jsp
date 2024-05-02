@@ -19,5 +19,7 @@
 				//String output = name.substring(0, 1).toUpperCase() + name.substring(1);
 			%><br/>
 		</div>
+		<canvas id="myCanvas"></canvas>
+		<script src="script.js"></script>
 	</body>
 </html>
