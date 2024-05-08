@@ -1,12 +1,12 @@
 let canvas = document.getElementById("myCanvas");
 let ctx = canvas.getContext("2d");
-canvas.wwidth = window.innerWidth;
+canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 let mouse = {
 	x: null,
 	y: null,
-	radius: 100
+	radius: 150
 }
 
 let particleArray = [];
@@ -41,11 +41,22 @@ class Particle{
 		ctx.closePath();
 		ctx.fill();
 	}
+	update(){
+		let dx = mouse.x - this.x;
+		let dy = mouse.y - this.y;
+		let distance = Math.sqrt(dx * dx + dy * dy);
+		if(distance < 500){
+			this.size = 50;
+		}
+		else{
+			this.size = 3;
+		}
+	}
 }
 
 function init(){
 	particleArray= [];
-	for(let i=0; i<500; i++){
+	for(let i = 0; i < 500; i++){
 		let x = Math.random() * canvas.width;
 		let y = Math.random() * canvas.width;
 		particleArray.push(new Particle(x, y));
@@ -56,8 +67,9 @@ console.log(particleArray);
 
 function animate(){
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
-	for(let i=0; i<particleArray.length; i++){
+	for(let i = 0; i < particleArray.length; i++){
 		particleArray[i].draw();
+		particleArray[i].update();
 	}
 	requestAnimationFrame(animate);
 }
