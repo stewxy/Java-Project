@@ -50,3 +50,9 @@ function init(){
 }
 init();
 console.log(particleArray);
+
+function animate(){
+	
+}
+
+
