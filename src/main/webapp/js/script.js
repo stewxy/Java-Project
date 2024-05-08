@@ -37,7 +37,7 @@ class Particle{
 	draw(){
 		ctx.fillStyle = "white";
 		ctx.beginPath();
-		ctx.ard(this.x, this.y, this.size, 0, Math.PI * 2);
+		ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
 		ctx.closePath();
 		ctx.fill();
 	}
@@ -52,7 +52,11 @@ init();
 console.log(particleArray);
 
 function animate(){
-	
+	ctx.clearRect(0, 0, canvas.width, canvas.height);
+	for(let i=0; i<particleArray.length; i++){
+		particleArray[i].draw();
+	}
+	requestAnimationFrame(animate);
 }
-
+animate();
 
