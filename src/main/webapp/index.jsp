@@ -9,7 +9,6 @@
 	</head>
 	<body>	
 		<%
-			//DbManager db = new DbManager();
 			Connection conn = DbManager.getConnection();
 			if(conn == null){
 				out.print("* Connection Failed *");
