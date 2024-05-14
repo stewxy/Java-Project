@@ -72,8 +72,8 @@ class Particle{
 
 function init(){
 	particleArray= [];
-	for(let y = 0, y2 = textCoordinates.height; y < y2; y++){
-		for(let x = 0, x2 = textCoordinates.width; x < x2; x++){
+	for(let y = 0; y < textCoordinates.height; y++){
+		for(let x = 0; x < textCoordinates.width; x++){
 			if(textCoordinates.data[(y * 4 * textCoordinates.width) + (x * 4) + 3] > 128){
 				let positionX = x;
 				let positionY = y;
