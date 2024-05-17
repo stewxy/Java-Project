@@ -101,6 +101,7 @@ function animate(){
 animate();
 
 function connect(){
+	let opacityValue = 1;
 	for(let a = 0; a < particleArray.length; a++){
 		for (let b = a; b < particleArray.length; b++){
 			
@@ -109,9 +110,9 @@ function connect(){
 			let distance = Math.sqrt(dx * dx + dy * dy);
 			
 			if(distance < 50){
-				ctx.strokeStyle = "white";
+				opacityValue = 1 - (distance/50);
+				ctx.strokeStyle = "rgba(255,255,255," + opacityValue + ")";
 				ctx.lineWidth = 2;
-				
 				ctx.beginPath();
 				ctx.moveTo(particleArray[a].x, particleArray[a].y);
 				ctx.lineTo(particleArray[b].x, particleArray[b].y);
