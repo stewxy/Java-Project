@@ -11,6 +11,9 @@ let mouse = {
 
 let particleArray = [];
 
+let adjustX = 6;
+let adjustY = 0;
+
 window.addEventListener("mousemove", function(event){
 	mouse.x = event.x;
 	mouse.y = event.y;
@@ -75,9 +78,9 @@ function init(){
 	for(let y = 0; y < textCoordinates.height; y++){
 		for(let x = 0; x < textCoordinates.width; x++){
 			if(textCoordinates.data[(y * 4 * textCoordinates.width) + (x * 4) + 3] > 128){
-				let positionX = x;
-				let positionY = y;
-				particleArray.push(new Particle(positionX * 10, positionY * 10));
+				let positionX = x + adjustX;
+				let positionY = y + adjustY;
+				particleArray.push(new Particle(positionX * 25, positionY * 25));
 			}
 		}
 		
